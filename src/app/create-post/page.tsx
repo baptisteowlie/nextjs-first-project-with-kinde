@@ -10,7 +10,7 @@ export default async function CreatePost() {
     }
 
     return (
-        <main className="text-center pt-32 px-5">
+        <main className="text-center pt-32 px-5 mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Create Post</h1>
             <Form />
         </main>

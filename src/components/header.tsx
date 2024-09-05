@@ -17,13 +17,12 @@ const navLinks = [
     },
     {
         href: '/create-post',
-        label: 'Create Post',
+        label: 'Create post',
     },
 ]
 export default function Header() {
 
     const path = usePathname()
-    console.log('path=', path)
     return <header className="flex justify-between px-8 my-4 border-b">
         <Image
             src="https://bytegrad.com/course-assets/youtube/example-logo.png"
@@ -32,7 +31,6 @@ export default function Header() {
             height="35"
             className="w-[35px] h-[35px]"
         ></Image>
-        <LogoutLink>Log out</LogoutLink>
         <nav >
             <ul className="flex space-x-2">
                 {
@@ -42,6 +40,8 @@ export default function Header() {
                         </li>
                     ))
                 }
+                <li>
+                <LogoutLink>Log out</LogoutLink></li>
             </ul>
         </nav>
     </header>
